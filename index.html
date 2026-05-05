@@ -1,0 +1,2129 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>スマイルサービス｜名古屋の引越し・家具組立・洗濯機設置・オフィス移転</title>
+<meta name="description" content="愛知県名古屋市北区を拠点に、格安引越し・家具組立・洗濯機設置・模様替え・オフィス移転を提供。大手引越センター出身、7,000件超の作業実績。中部・近畿エリア対応。" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<style>
+/* ============== Tokens ============== */
+:root {
+  --c-navy: #0E2A47;
+  --c-navy-deep: #08182B;
+  --c-orange: #FF7A00;
+  --c-orange-soft: #FFF1E2;
+  --c-yellow: #FFC107;
+  --c-bg: #FFFFFF;
+  --c-bg-soft: #F7F8FA;
+  --c-bg-warm: #FFF9F2;
+  --c-text: #1A1A1A;
+  --c-text-mute: #5A6577;
+  --c-line: #E4E7EC;
+  --c-line-soft: #EFF1F4;
+  --c-success: #1F8A5B;
+
+  --r-sm: 6px;
+  --r-md: 12px;
+  --r-lg: 20px;
+  --r-xl: 28px;
+
+  --shadow-sm: 0 1px 2px rgba(14,42,71,.06), 0 1px 3px rgba(14,42,71,.05);
+  --shadow-md: 0 4px 12px rgba(14,42,71,.08), 0 2px 6px rgba(14,42,71,.04);
+  --shadow-lg: 0 20px 50px rgba(14,42,71,.12), 0 6px 20px rgba(14,42,71,.06);
+
+  --container: 1200px;
+  --header-h: 80px;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: var(--header-h); }
+body {
+  margin: 0;
+  font-family: 'Noto Sans JP', 'Hiragino Sans', 'Yu Gothic', sans-serif;
+  color: var(--c-text);
+  background: var(--c-bg);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  font-feature-settings: "palt";
+}
+img { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+button { font-family: inherit; cursor: pointer; }
+
+.container {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+.sp-only { display: none; }
+@media (max-width: 720px) { .sp-only { display: inline; } }
+
+/* ============== Buttons ============== */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 22px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 14px;
+  border: 1.5px solid transparent;
+  transition: transform .15s ease, box-shadow .2s ease, background .2s ease, color .2s ease;
+  white-space: nowrap;
+  letter-spacing: .02em;
+}
+.btn-lg { padding: 16px 32px; font-size: 16px; }
+.btn-block { width: 100%; }
+.btn-primary {
+  background: var(--c-orange);
+  color: #fff;
+  box-shadow: 0 8px 20px rgba(255,122,0,.28);
+}
+.btn-primary:hover { transform: translateY(-1px); box-shadow: 0 12px 26px rgba(255,122,0,.36); background: #FF8A1F; }
+.btn-outline {
+  background: #fff;
+  color: var(--c-navy);
+  border-color: var(--c-navy);
+}
+.btn-outline:hover { background: var(--c-navy); color: #fff; }
+
+/* ============== Header ============== */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(255,255,255,.92);
+  backdrop-filter: saturate(180%) blur(14px);
+  -webkit-backdrop-filter: saturate(180%) blur(14px);
+  border-bottom: 1px solid var(--c-line-soft);
+}
+.header-inner {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  height: var(--header-h);
+}
+.brand { display: flex; align-items: center; gap: 12px; flex-shrink: 0; }
+.brand-mark { display: inline-flex; }
+.brand-text { display: flex; flex-direction: column; line-height: 1.1; }
+.brand-name { font-weight: 800; font-size: 17px; color: var(--c-navy); letter-spacing: .02em; }
+.brand-sub { font-family: 'Inter', sans-serif; font-size: 10px; color: var(--c-text-mute); letter-spacing: .2em; margin-top: 2px; }
+
+.nav { display: flex; gap: 22px; margin-left: auto; }
+.nav a {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--c-navy);
+  position: relative;
+  padding: 6px 0;
+}
+.nav a:hover { color: var(--c-orange); }
+.nav a::after {
+  content: "";
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 2px;
+  background: var(--c-orange);
+  transform: scaleX(0);
+  transition: transform .2s ease;
+}
+.nav a:hover::after { transform: scaleX(1); }
+
+.header-cta { display: flex; align-items: center; gap: 14px; }
+.header-tel {
+  display: flex; align-items: center; gap: 8px;
+  color: var(--c-navy);
+}
+.header-tel .tel-label {
+  display: block;
+  font-size: 10px;
+  color: var(--c-text-mute);
+  font-weight: 500;
+}
+.header-tel .tel-num {
+  display: block;
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: .03em;
+  line-height: 1.1;
+}
+.header-btn { padding: 10px 18px; font-size: 13px; }
+
+.hamburger {
+  display: none;
+  width: 40px; height: 40px;
+  background: transparent;
+  border: 1px solid var(--c-line);
+  border-radius: 8px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin-left: auto;
+}
+.hamburger span {
+  display: block; width: 20px; height: 2px; background: var(--c-navy);
+}
+
+.mobile-nav {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  padding: 16px 24px 24px;
+  border-top: 1px solid var(--c-line-soft);
+  background: #fff;
+}
+.mobile-nav a {
+  padding: 14px 4px;
+  border-bottom: 1px solid var(--c-line-soft);
+  font-weight: 600;
+}
+.mobile-nav a.btn { margin-top: 12px; border-bottom: none; }
+.mobile-nav.is-open { display: flex; }
+
+@media (max-width: 1080px) {
+  .nav { display: none; }
+  .header-tel .tel-label { display: none; }
+}
+@media (max-width: 720px) {
+  :root { --header-h: 64px; }
+  .header-tel { display: none; }
+  .header-btn { display: none; }
+  .hamburger { display: flex; }
+  .brand-name { font-size: 15px; }
+  .brand-sub { font-size: 9px; }
+}
+
+/* ============== Hero ============== */
+.hero {
+  position: relative;
+  background:
+    radial-gradient(1000px 500px at 100% 0%, rgba(255,122,0,.08), transparent 60%),
+    linear-gradient(180deg, #FFFDFA 0%, #fff 100%);
+  padding: 80px 0 100px;
+  overflow: hidden;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 60px; right: -100px;
+  width: 400px; height: 400px;
+  background: radial-gradient(circle, rgba(255,193,7,.12) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+.hero-inner {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 64px;
+  align-items: center;
+}
+.hero-badges { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+.badge {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: .02em;
+}
+.badge-award { background: var(--c-navy); color: #fff; }
+.badge-rating { background: #FFF7DB; color: #8B6500; border: 1px solid #FFE8A1; }
+
+.hero-title {
+  font-size: clamp(28px, 4vw, 48px);
+  font-weight: 800;
+  line-height: 1.35;
+  letter-spacing: .01em;
+  margin: 0 0 24px;
+  color: var(--c-navy);
+  text-wrap: pretty;
+}
+.hero-title-sub {
+  display: block;
+  font-size: clamp(13px, 1.3vw, 16px);
+  font-weight: 600;
+  color: var(--c-text-mute);
+  margin-bottom: 12px;
+  letter-spacing: .03em;
+}
+.hero-accent {
+  background: linear-gradient(180deg, transparent 60%, rgba(255,122,0,.25) 60%);
+  padding: 0 4px;
+}
+.hero-lead {
+  font-size: 16px;
+  color: var(--c-text-mute);
+  margin: 0 0 32px;
+  max-width: 520px;
+}
+.hero-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 28px;
+}
+.hero-bullets {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+  list-style: none;
+  padding: 0; margin: 0;
+  font-size: 14px;
+  color: var(--c-text);
+}
+.hero-bullets li { display: flex; align-items: center; gap: 6px; }
+.check {
+  display: inline-flex;
+  width: 18px; height: 18px;
+  background: var(--c-orange);
+  color: #fff;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.hero-visual { position: relative; }
+.hero-card-main {
+  border-radius: var(--r-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  background: #fff;
+}
+.hero-img-placeholder {
+  aspect-ratio: 4 / 3.2;
+  background:
+    repeating-linear-gradient(45deg, #F4EEE5 0 14px, #EBE3D5 14px 28px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #8E7B5E;
+}
+.placeholder-label {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+.placeholder-sub {
+  font-size: 12px;
+  margin-top: 4px;
+  opacity: .8;
+}
+.hero-stats {
+  position: absolute;
+  bottom: -40px; left: -20px;
+  background: #fff;
+  border-radius: var(--r-lg);
+  padding: 20px 24px;
+  box-shadow: var(--shadow-lg);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border: 1px solid var(--c-line-soft);
+}
+.stat { text-align: center; }
+.stat-num {
+  font-family: 'Inter', sans-serif;
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--c-navy);
+  line-height: 1;
+}
+.stat-unit { font-size: 14px; color: var(--c-text-mute); margin-left: 2px; }
+.stat-label { font-size: 11px; color: var(--c-text-mute); margin-top: 4px; font-weight: 600; }
+.stat-divider { width: 1px; height: 36px; background: var(--c-line); }
+
+@media (max-width: 960px) {
+  .hero-inner { grid-template-columns: 1fr; gap: 40px; }
+  .hero { padding: 48px 0 80px; }
+  .hero-stats { left: 0; right: 0; bottom: -30px; justify-content: center; }
+}
+@media (max-width: 480px) {
+  .hero-stats { flex-direction: column; gap: 12px; padding: 16px; }
+  .stat-divider { display: none; }
+}
+
+/* ============== Section common ============== */
+section { padding: 100px 0; }
+.section-head { text-align: center; max-width: 720px; margin: 0 auto 56px; }
+.section-eyebrow {
+  display: inline-block;
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .25em;
+  color: var(--c-orange);
+  margin-bottom: 12px;
+}
+.section-title {
+  font-size: clamp(24px, 3vw, 36px);
+  font-weight: 800;
+  margin: 0 0 16px;
+  color: var(--c-navy);
+  letter-spacing: .01em;
+  line-height: 1.4;
+}
+.section-lead {
+  color: var(--c-text-mute);
+  font-size: 15px;
+  margin: 0;
+}
+
+/* ============== Strength ============== */
+.strength { background: var(--c-bg-soft); }
+.strength-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.strength-card {
+  background: #fff;
+  border: 1px solid var(--c-line-soft);
+  border-radius: var(--r-lg);
+  padding: 32px 28px;
+  transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+}
+.strength-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: rgba(255,122,0,.3);
+}
+.strength-num {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+  color: var(--c-orange);
+  letter-spacing: .1em;
+  margin-bottom: 12px;
+}
+.strength-card h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 0 12px;
+  color: var(--c-navy);
+}
+.strength-card p {
+  font-size: 14px;
+  color: var(--c-text-mute);
+  margin: 0;
+}
+@media (max-width: 880px) { .strength-grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 540px) { .strength-grid { grid-template-columns: 1fr; } }
+
+/* ============== Services ============== */
+.service-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.service-featured {
+  grid-column: span 3;
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 0;
+  border: 2px solid var(--c-orange);
+}
+.service-card {
+  background: #fff;
+  border: 1px solid var(--c-line);
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.service-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
+.service-img {
+  aspect-ratio: 16 / 10;
+  background: repeating-linear-gradient(135deg, #ECE3D5 0 12px, #E2D6C2 12px 24px);
+  display: flex; align-items: center; justify-content: center;
+  color: #7A6849;
+}
+.service-featured .service-img {
+  aspect-ratio: auto;
+  height: 100%;
+  min-height: 300px;
+}
+.service-body { padding: 24px; flex: 1; display: flex; flex-direction: column; gap: 12px; }
+.service-tag {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: var(--c-orange);
+  color: #fff;
+  letter-spacing: .05em;
+  align-self: flex-start;
+}
+.service-card h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--c-navy);
+}
+.service-featured h3 { font-size: 26px; }
+.service-desc {
+  font-size: 14px;
+  color: var(--c-text-mute);
+  margin: 0;
+  flex: 1;
+}
+.service-features {
+  list-style: none;
+  padding: 0; margin: 4px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px 16px;
+  font-size: 13px;
+}
+.service-features li {
+  position: relative;
+  padding-left: 20px;
+}
+.service-features li::before {
+  content: "";
+  position: absolute;
+  left: 0; top: 9px;
+  width: 12px; height: 2px;
+  background: var(--c-orange);
+}
+.service-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 12px;
+  border-top: 1px solid var(--c-line-soft);
+  font-size: 13px;
+}
+.service-price { font-weight: 800; color: var(--c-navy); font-size: 15px; }
+.service-rating { color: #B58000; font-weight: 600; }
+
+@media (max-width: 1000px) {
+  .service-list { grid-template-columns: 1fr 1fr; }
+  .service-featured { grid-column: span 2; grid-template-columns: 1fr; }
+  .service-featured .service-img { min-height: 220px; }
+}
+@media (max-width: 600px) {
+  .service-list { grid-template-columns: 1fr; }
+  .service-featured { grid-column: span 1; }
+  .service-features { grid-template-columns: 1fr; }
+}
+
+/* ============== Pricing ============== */
+.pricing { background: var(--c-bg-soft); }
+.pricing-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid var(--c-line);
+  flex-wrap: wrap;
+}
+.pricing-tab {
+  background: transparent;
+  border: none;
+  padding: 14px 28px;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--c-text-mute);
+  border-bottom: 3px solid transparent;
+  margin-bottom: -1px;
+  transition: color .2s ease, border-color .2s ease;
+}
+.pricing-tab:hover { color: var(--c-navy); }
+.pricing-tab.is-active { color: var(--c-orange); border-bottom-color: var(--c-orange); }
+
+.pricing-panel { display: none; }
+.pricing-panel.is-active { display: block; }
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.pricing-grid-3 { grid-template-columns: repeat(3, 1fr); }
+.pricing-card {
+  background: #fff;
+  border-radius: var(--r-lg);
+  padding: 28px;
+  border: 1px solid var(--c-line);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.pricing-card-recommend {
+  border: 2px solid var(--c-orange);
+  background: linear-gradient(180deg, #fff 0%, #FFF8F0 100%);
+  transform: scale(1.02);
+}
+.recommend-flag {
+  position: absolute;
+  top: -12px; right: 20px;
+  background: var(--c-orange);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 800;
+  padding: 4px 12px;
+  border-radius: 999px;
+  letter-spacing: .1em;
+}
+.pricing-card-head h3 {
+  margin: 0 0 4px;
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--c-navy);
+}
+.pricing-card-sub { font-size: 12px; color: var(--c-text-mute); }
+.pricing-card-price {
+  border-top: 1px dashed var(--c-line);
+  border-bottom: 1px dashed var(--c-line);
+  padding: 16px 0;
+}
+.price-range {
+  display: block;
+  font-family: 'Inter', sans-serif;
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--c-navy);
+  letter-spacing: .01em;
+}
+.tilde { font-weight: 400; color: var(--c-text-mute); margin: 0 4px; }
+.price-note { font-size: 11px; color: var(--c-text-mute); }
+.pricing-card-features {
+  list-style: none; padding: 0; margin: 0;
+  display: flex; flex-direction: column; gap: 8px;
+  font-size: 13px;
+}
+.pricing-card-features li {
+  position: relative;
+  padding-left: 20px;
+}
+.pricing-card-features li::before {
+  content: "✓";
+  position: absolute;
+  left: 0; top: 0;
+  color: var(--c-orange);
+  font-weight: 700;
+}
+.pricing-options {
+  margin-top: 32px;
+  background: #fff;
+  border-radius: var(--r-lg);
+  padding: 24px 28px;
+  border: 1px solid var(--c-line);
+}
+.pricing-options h4 {
+  margin: 0 0 16px;
+  font-size: 15px;
+  color: var(--c-navy);
+  font-weight: 700;
+}
+.options-list {
+  list-style: none; padding: 0; margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px 32px;
+  font-size: 14px;
+}
+.options-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--c-line-soft);
+}
+.options-list li span:last-child { font-weight: 700; color: var(--c-navy); }
+
+.pricing-table-wrap { background: #fff; border-radius: var(--r-lg); overflow: hidden; border: 1px solid var(--c-line); max-width: 720px; margin: 0 auto; }
+.pricing-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+.pricing-table th, .pricing-table td {
+  padding: 14px 24px;
+  text-align: left;
+  border-bottom: 1px solid var(--c-line-soft);
+}
+.pricing-table th {
+  background: var(--c-navy);
+  color: #fff;
+  font-weight: 700;
+}
+.pricing-table td:last-child { font-weight: 800; color: var(--c-navy); text-align: right; font-family: 'Inter', sans-serif; }
+.pricing-note { text-align: center; margin-top: 16px; font-size: 13px; color: var(--c-text-mute); }
+
+@media (max-width: 880px) {
+  .pricing-grid, .pricing-grid-3 { grid-template-columns: 1fr; }
+  .pricing-card-recommend { transform: none; }
+  .options-list { grid-template-columns: 1fr; }
+}
+
+/* ============== Simulator ============== */
+.sim { padding: 0; margin-top: -60px; margin-bottom: 100px; }
+.sim-card {
+  background: linear-gradient(135deg, var(--c-navy) 0%, var(--c-navy-deep) 100%);
+  border-radius: var(--r-xl);
+  padding: 56px;
+  color: #fff;
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 48px;
+  align-items: center;
+  box-shadow: var(--shadow-lg);
+  position: relative;
+  overflow: hidden;
+}
+.sim-card::before {
+  content: "";
+  position: absolute;
+  top: -100px; right: -100px;
+  width: 400px; height: 400px;
+  background: radial-gradient(circle, rgba(255,122,0,.2) 0%, transparent 70%);
+  border-radius: 50%;
+}
+.sim-head { position: relative; }
+.sim-head .section-eyebrow { color: var(--c-yellow); }
+.sim-head .section-title { color: #fff; text-align: left; margin: 0 0 12px; }
+.sim-head .section-lead { color: rgba(255,255,255,.75); }
+.sim-body { display: flex; flex-direction: column; gap: 20px; position: relative; }
+.sim-controls { display: flex; flex-direction: column; gap: 16px; }
+.sim-field { display: flex; flex-direction: column; gap: 8px; }
+.sim-field label {
+  font-size: 12px;
+  color: rgba(255,255,255,.7);
+  letter-spacing: .1em;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: 'Inter', sans-serif;
+}
+.sim-options {
+  display: flex; gap: 6px; flex-wrap: wrap;
+}
+.sim-opt {
+  background: rgba(255,255,255,.08);
+  border: 1px solid rgba(255,255,255,.15);
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+  transition: all .2s ease;
+}
+.sim-opt:hover { background: rgba(255,255,255,.14); }
+.sim-opt.is-active {
+  background: var(--c-orange);
+  border-color: var(--c-orange);
+  color: #fff;
+}
+.sim-result {
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: var(--r-lg);
+  padding: 28px;
+  margin-top: 8px;
+}
+.sim-result-label {
+  font-size: 12px;
+  color: rgba(255,255,255,.7);
+  letter-spacing: .15em;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.sim-result-price {
+  font-family: 'Inter', sans-serif;
+  font-size: 32px;
+  font-weight: 800;
+  color: #fff;
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+.sim-result-price #simMin, .sim-result-price #simMax { letter-spacing: .01em; }
+.sim-result-price .yen { font-size: 18px; margin-left: 4px; }
+.sim-result-meta { font-size: 13px; color: rgba(255,255,255,.7); margin: 8px 0 20px; }
+.sim-disclaimer { font-size: 11px; color: rgba(255,255,255,.55); margin: 12px 0 0; text-align: center; }
+
+@media (max-width: 960px) {
+  .sim-card { grid-template-columns: 1fr; padding: 40px 28px; gap: 32px; }
+  .sim { margin-bottom: 60px; }
+}
+
+/* ============== Area ============== */
+.area-search {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  max-width: 520px;
+  margin: 0 auto 32px;
+}
+.area-search input {
+  flex: 1;
+  padding: 12px 18px;
+  border: 1.5px solid var(--c-line);
+  border-radius: 999px;
+  font-size: 14px;
+  font-family: inherit;
+  background: #fff;
+}
+.area-search input:focus { outline: none; border-color: var(--c-orange); }
+.area-count { font-size: 13px; color: var(--c-text-mute); white-space: nowrap; }
+
+.area-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr;
+  gap: 20px;
+}
+.area-block {
+  background: #fff;
+  border: 1px solid var(--c-line);
+  border-radius: var(--r-lg);
+  padding: 28px;
+}
+.area-block h3 {
+  margin: 0 0 16px;
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--c-navy);
+  padding-bottom: 12px;
+  border-bottom: 2px solid var(--c-orange);
+  display: inline-block;
+}
+.area-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 8px;
+}
+.area-list span {
+  display: inline-flex;
+  background: var(--c-bg-soft);
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  color: var(--c-text);
+  transition: background .2s ease;
+}
+.area-list span.is-hit {
+  background: var(--c-orange);
+  color: #fff;
+  font-weight: 700;
+}
+.area-list span.is-hidden { display: none; }
+
+@media (max-width: 880px) {
+  .area-grid { grid-template-columns: 1fr; }
+}
+
+/* ============== Voice ============== */
+.voice { background: var(--c-bg-soft); }
+.voice-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.voice-card {
+  background: #fff;
+  border-radius: var(--r-lg);
+  padding: 28px;
+  border: 1px solid var(--c-line);
+  position: relative;
+}
+.voice-card::before {
+  content: "”";
+  position: absolute;
+  top: -10px; left: 20px;
+  font-family: 'Inter', sans-serif;
+  font-size: 80px;
+  color: var(--c-orange);
+  opacity: .15;
+  line-height: 1;
+}
+.voice-rating {
+  color: var(--c-yellow);
+  font-size: 16px;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+.voice-title {
+  font-size: 17px;
+  font-weight: 700;
+  margin: 0 0 12px;
+  color: var(--c-navy);
+}
+.voice-body { font-size: 14px; color: var(--c-text); margin: 0 0 16px; }
+.voice-meta { font-size: 12px; color: var(--c-text-mute); padding-top: 12px; border-top: 1px solid var(--c-line-soft); }
+.voice-source { text-align: center; font-size: 12px; color: var(--c-text-mute); margin-top: 24px; }
+
+@media (max-width: 720px) { .voice-grid { grid-template-columns: 1fr; } }
+
+/* ============== Flow ============== */
+.flow-list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0;
+  list-style: none;
+  padding: 0; margin: 0;
+  position: relative;
+}
+.flow-list::before {
+  content: "";
+  position: absolute;
+  top: 28px;
+  left: 10%; right: 10%;
+  height: 2px;
+  background: linear-gradient(90deg, var(--c-orange) 0%, var(--c-yellow) 100%);
+  z-index: 0;
+}
+.flow-item {
+  text-align: center;
+  padding: 0 12px;
+  position: relative;
+  z-index: 1;
+}
+.flow-num {
+  width: 56px; height: 56px;
+  background: #fff;
+  border: 3px solid var(--c-orange);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--c-orange);
+  margin: 0 auto 16px;
+}
+.flow-item h3 {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--c-navy);
+  margin: 0 0 8px;
+}
+.flow-item p {
+  font-size: 13px;
+  color: var(--c-text-mute);
+  margin: 0;
+  line-height: 1.6;
+}
+
+@media (max-width: 880px) {
+  .flow-list { grid-template-columns: 1fr 1fr; gap: 32px 16px; }
+  .flow-list::before { display: none; }
+}
+@media (max-width: 480px) {
+  .flow-list { grid-template-columns: 1fr; }
+}
+
+/* ============== FAQ ============== */
+.faq { background: var(--c-bg-soft); }
+.faq-list {
+  max-width: 820px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.faq-item {
+  background: #fff;
+  border: 1px solid var(--c-line);
+  border-radius: var(--r-md);
+  overflow: hidden;
+}
+.faq-item[open] { border-color: var(--c-orange); }
+.faq-item summary {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 18px 24px;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--c-navy);
+  cursor: pointer;
+  list-style: none;
+  position: relative;
+}
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-q {
+  display: inline-flex;
+  width: 28px; height: 28px;
+  background: var(--c-orange);
+  color: #fff;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+  font-size: 13px;
+  flex-shrink: 0;
+}
+.faq-toggle {
+  margin-left: auto;
+  width: 14px; height: 14px;
+  position: relative;
+  flex-shrink: 0;
+}
+.faq-toggle::before, .faq-toggle::after {
+  content: "";
+  position: absolute;
+  background: var(--c-navy);
+  transition: transform .2s ease;
+}
+.faq-toggle::before { top: 6px; left: 0; width: 14px; height: 2px; }
+.faq-toggle::after { top: 0; left: 6px; width: 2px; height: 14px; }
+.faq-item[open] .faq-toggle::after { transform: rotate(90deg); }
+.faq-a {
+  display: flex;
+  gap: 16px;
+  padding: 0 24px 22px 24px;
+  font-size: 14px;
+  color: var(--c-text);
+}
+.faq-a-mark {
+  display: inline-flex;
+  width: 28px; height: 28px;
+  background: var(--c-bg-soft);
+  border: 1px solid var(--c-line);
+  color: var(--c-navy);
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+  font-size: 13px;
+  flex-shrink: 0;
+}
+.faq-a p { margin: 4px 0 0; }
+
+/* ============== Company ============== */
+.company-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: start;
+}
+.company-profile {
+  background: #fff;
+  border: 1px solid var(--c-line);
+  border-radius: var(--r-lg);
+  padding: 32px;
+}
+.profile-img {
+  width: 120px; height: 120px;
+  border-radius: 50%;
+  background: repeating-linear-gradient(45deg, #ECE3D5 0 10px, #DCD0BB 10px 20px);
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #7A6849;
+  font-size: 11px;
+}
+.profile-role {
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  letter-spacing: .15em;
+  font-weight: 600;
+  color: var(--c-orange);
+}
+.company-profile h3 {
+  font-size: 26px;
+  font-weight: 800;
+  color: var(--c-navy);
+  margin: 4px 0 16px;
+}
+.profile-text p { font-size: 14px; color: var(--c-text-mute); margin: 0; }
+.company-table {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+.company-row {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 16px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--c-line-soft);
+  font-size: 14px;
+}
+.company-row dt {
+  font-weight: 700;
+  color: var(--c-navy);
+}
+.company-row dd { margin: 0; color: var(--c-text); }
+
+@media (max-width: 880px) {
+  .company-wrap { grid-template-columns: 1fr; gap: 32px; }
+  .company-row { grid-template-columns: 130px 1fr; gap: 8px; }
+}
+
+/* ============== Contact ============== */
+.contact { background: var(--c-bg-soft); padding: 100px 0; }
+.contact-card {
+  background: #fff;
+  border-radius: var(--r-xl);
+  padding: 56px;
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--c-line-soft);
+}
+.contact-head { text-align: center; margin-bottom: 40px; }
+.contact-eyebrow { color: var(--c-orange); }
+.contact-title { color: var(--c-navy); }
+.contact-body {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 48px;
+}
+.contact-tel-block {
+  background: linear-gradient(135deg, var(--c-navy) 0%, var(--c-navy-deep) 100%);
+  border-radius: var(--r-lg);
+  padding: 32px 28px;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+  align-self: start;
+}
+.contact-tel-label { font-size: 12px; letter-spacing: .1em; color: rgba(255,255,255,.7); }
+.contact-tel-num {
+  font-family: 'Inter', sans-serif;
+  font-size: 32px;
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: .03em;
+  display: block;
+}
+.contact-tel-hours { font-size: 12px; color: rgba(255,255,255,.7); }
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.form-row .full { grid-column: span 2; }
+.form-label {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--c-navy);
+  margin-bottom: 6px;
+}
+.form-label em {
+  display: inline-block;
+  font-style: normal;
+  font-size: 10px;
+  background: var(--c-orange);
+  color: #fff;
+  padding: 1px 6px;
+  border-radius: 4px;
+  margin-left: 6px;
+  font-weight: 700;
+  letter-spacing: .05em;
+}
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1.5px solid var(--c-line);
+  border-radius: var(--r-sm);
+  font-family: inherit;
+  font-size: 14px;
+  background: #fff;
+  transition: border-color .2s ease, box-shadow .2s ease;
+}
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: var(--c-orange);
+  box-shadow: 0 0 0 3px rgba(255,122,0,.12);
+}
+.select-wrap { position: relative; }
+.select-wrap::after {
+  content: "▾";
+  position: absolute;
+  right: 14px; top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: var(--c-text-mute);
+}
+.contact-form select { appearance: none; padding-right: 36px; }
+.form-check {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--c-text-mute);
+}
+.form-check a { color: var(--c-orange); text-decoration: underline; }
+.form-success {
+  background: #E8F5EE;
+  border: 1px solid #BBE5CC;
+  color: var(--c-success);
+  padding: 16px 20px;
+  border-radius: var(--r-md);
+  font-size: 14px;
+  margin-top: 12px;
+}
+
+@media (max-width: 880px) {
+  .contact-card { padding: 32px 24px; }
+  .contact-body { grid-template-columns: 1fr; gap: 24px; }
+  .form-row { grid-template-columns: 1fr; }
+  .form-row .full { grid-column: span 1; }
+}
+
+/* ============== Footer ============== */
+.site-footer {
+  background: var(--c-navy-deep);
+  color: rgba(255,255,255,.7);
+  padding: 64px 0 0;
+}
+.footer-inner {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 64px;
+  padding-bottom: 40px;
+}
+.footer-brand .brand-name { color: #fff; }
+.footer-brand .brand-sub { color: rgba(255,255,255,.5); }
+.footer-tagline { font-size: 13px; margin: 16px 0 0; line-height: 1.7; }
+.footer-cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+.footer-cols h4 {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0 0 16px;
+}
+.footer-cols ul { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px; font-size: 13px; }
+.footer-cols a:hover { color: var(--c-orange); }
+.footer-bottom { border-top: 1px solid rgba(255,255,255,.08); padding: 20px 0; }
+.footer-bottom-inner {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  color: rgba(255,255,255,.5);
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+@media (max-width: 720px) {
+  .footer-inner { grid-template-columns: 1fr; gap: 32px; }
+  .footer-cols { grid-template-columns: 1fr 1fr; gap: 24px; }
+}
+
+/* ============== Floating CTA ============== */
+.floating-cta {
+  position: fixed;
+  right: 20px; bottom: 20px;
+  display: none;
+  align-items: center;
+  gap: 8px;
+  background: var(--c-orange);
+  color: #fff;
+  padding: 14px 20px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 14px;
+  box-shadow: 0 12px 30px rgba(255,122,0,.4);
+  z-index: 40;
+}
+@media (max-width: 720px) { .floating-cta { display: inline-flex; } }
+
+</style>
+</head>
+<body>
+
+<!-- ============== HEADER ============== -->
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a href="#top" class="brand" aria-label="スマイルサービス トップへ">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 40 40" width="36" height="36">
+          <circle cx="20" cy="20" r="18" fill="#FF7A00"/>
+          <circle cx="14" cy="17" r="2.2" fill="#0E2A47"/>
+          <circle cx="26" cy="17" r="2.2" fill="#0E2A47"/>
+          <path d="M11 23 Q20 31 29 23" stroke="#0E2A47" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+        </svg>
+      </span>
+      <span class="brand-text">
+        <span class="brand-name">スマイルサービス</span>
+        <span class="brand-sub">SMILE SERVICE</span>
+      </span>
+    </a>
+    <nav class="nav" aria-label="メインナビゲーション">
+      <a href="#services">サービス</a>
+      <a href="#strength">選ばれる理由</a>
+      <a href="#pricing">料金</a>
+      <a href="#area">対応エリア</a>
+      <a href="#voice">お客様の声</a>
+      <a href="#company">会社概要</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="header-cta">
+      <a href="tel:0000000000" class="header-tel" aria-label="電話で問い合わせる">
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .7-.2 1l-2.3 2.2z" fill="currentColor"/></svg>
+        <span>
+          <span class="tel-label">お電話でのご相談</span>
+          <span class="tel-num">090-0000-0000</span>
+        </span>
+      </a>
+      <a href="#contact" class="btn btn-primary header-btn">無料お見積り</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="メニューを開く" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-nav" id="mobileNav" hidden>
+    <a href="#services">サービス</a>
+    <a href="#strength">選ばれる理由</a>
+    <a href="#pricing">料金</a>
+    <a href="#area">対応エリア</a>
+    <a href="#voice">お客様の声</a>
+    <a href="#company">会社概要</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contact" class="btn btn-primary">無料お見積り</a>
+  </div>
+</header>
+
+<!-- ============== HERO ============== -->
+<section class="hero" id="top">
+  <div class="container hero-inner">
+    <div class="hero-text">
+      <div class="hero-badges">
+        <span class="badge badge-award">くらしのマーケットアワード2023 急成長賞</span>
+        <span class="badge badge-rating">
+          <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M12 2l2.9 6.9L22 10l-5.5 4.8L18.2 22 12 18.3 5.8 22l1.7-7.2L2 10l7.1-1.1z" fill="#FFC107"/></svg>
+          4.91 / 口コミ863件
+        </span>
+      </div>
+      <h1 class="hero-title">
+        <span class="hero-title-sub">名古屋発・大手引越センター出身のプロが手掛ける</span>
+        安心・安全・気配りの<br />
+        <span class="hero-accent">引越しと暮らしのサービス</span>
+      </h1>
+      <p class="hero-lead">
+        7,000件を超える作業実績。VIP・有名人引越、大規模移設、TV出演まで経験した「本物のプロ」が、ご家庭の引越しから家具組立、洗濯機設置、オフィス移転まで、丁寧に対応いたします。
+      </p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary btn-lg">
+          <span>無料お見積り・ご相談</span>
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12h14m0 0l-6-6m6 6l-6 6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="tel:0000000000" class="btn btn-outline btn-lg">
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .7-.2 1l-2.3 2.2z" fill="currentColor"/></svg>
+          090-0000-0000
+        </a>
+      </div>
+      <ul class="hero-bullets">
+        <li><span class="check">✓</span> 当日追加料金一切なし</li>
+        <li><span class="check">✓</span> オンラインカード決済対応</li>
+        <li><span class="check">✓</span> インボイス登録済</li>
+        <li><span class="check">✓</span> 損害保険加入済</li>
+      </ul>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-card hero-card-main">
+        <div class="hero-img-placeholder" role="img" aria-label="作業中の写真をここに配置">
+          <span class="placeholder-label">作業風景写真</span>
+          <span class="placeholder-sub">トラック・搬入作業など</span>
+        </div>
+      </div>
+      <div class="hero-card hero-stats">
+        <div class="stat">
+          <div class="stat-num">7,000<span class="stat-unit">件+</span></div>
+          <div class="stat-label">作業実績</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <div class="stat-num">4.91<span class="stat-unit">/5.0</span></div>
+          <div class="stat-label">口コミ評価</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <div class="stat-num">10<span class="stat-unit">年+</span></div>
+          <div class="stat-label">業界経験</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== STRENGTH ============== -->
+<section class="strength" id="strength">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-eyebrow">STRENGTH</span>
+      <h2 class="section-title">スマイルサービスが<br class="sp-only" />選ばれる理由</h2>
+      <p class="section-lead">大手引越センターで培った技術と、個人事業ならではの柔軟さ。<br />「お客様中心」の姿勢で、引越し・暮らしのお困りごとに応えます。</p>
+    </div>
+    <div class="strength-grid">
+      <article class="strength-card">
+        <div class="strength-num">01</div>
+        <h3>大手出身・本物のプロ</h3>
+        <p>大手引越センターに7年勤務。ドライバー〜班長〜講師まで経験。VIP引越、大規模移設、TV出演まで手掛けた本物のプロが直接対応します。</p>
+      </article>
+      <article class="strength-card">
+        <div class="strength-num">02</div>
+        <h3>明朗会計・追加料金なし</h3>
+        <p>事前にしっかりお見積り。当日の急な追加料金は一切ありません。インボイス対応の領収書・請求書も発行可能で、法人様にも安心です。</p>
+      </article>
+      <article class="strength-card">
+        <div class="strength-num">03</div>
+        <h3>テキパキ時短作業</h3>
+        <p>1日かかる作業を半日で終わらせる手際の良さ。お子様・ペット・ご近所への配慮も徹底し、短時間で気持ち良く新生活へ。</p>
+      </article>
+      <article class="strength-card">
+        <div class="strength-num">04</div>
+        <h3>清潔・丁寧な養生</h3>
+        <p>身嗜み・ニオイへの配慮はもちろん、養生も徹底。タワーマンション等の特殊条件にも対応します。家具吊り作業（クレーン車）も可能。</p>
+      </article>
+      <article class="strength-card">
+        <div class="strength-num">05</div>
+        <h3>柔軟な対応力</h3>
+        <p>引越し後の照明取付、アース線、簡単な掃除、配置移動まで。ハンガーボックスやベッドマットカバーの貸出も可。「あったら助かる」を形に。</p>
+      </article>
+      <article class="strength-card">
+        <div class="strength-num">06</div>
+        <h3>個人情報を厳守</h3>
+        <p>大切な家財と一緒に、お客様の個人情報も厳重に扱います。VIP・シークレット引越の経験から、信頼第一の業務を徹底しています。</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============== SERVICES ============== -->
+<section class="services" id="services">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-eyebrow">SERVICES</span>
+      <h2 class="section-title">提供サービス</h2>
+      <p class="section-lead">引越しを軸に、暮らしと仕事の「困った」をワンストップで解決します。</p>
+    </div>
+
+    <div class="service-list">
+      <article class="service-card service-featured">
+        <div class="service-img" role="img" aria-label="格安引越しのサービス画像">
+          <span class="placeholder-label">格安引越し</span>
+        </div>
+        <div class="service-body">
+          <span class="service-tag service-tag-main">看板サービス</span>
+          <h3>格安引越し</h3>
+          <p class="service-desc">
+            ご単身からご家族まで、2t・3t・4tのアルミバンで対応。引越専業のプロによる、安心・スピーディな引越しをお届けします。エアコン・不用品回収もまとめてお任せください。
+          </p>
+          <ul class="service-features">
+            <li>2t / 3t / 4t トラック対応</li>
+            <li>エアコン取外し・取付（任意保険加入済）</li>
+            <li>不用品回収・配置移動</li>
+            <li>ハンガーボックス／マットカバー貸出</li>
+          </ul>
+          <div class="service-meta">
+            <span class="service-price">基本料金 ¥30,800〜</span>
+            <span class="service-rating">★ 4.91（789件）</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="service-card">
+        <div class="service-img" role="img" aria-label="家具組み立てサービスの画像">
+          <span class="placeholder-label">家具組み立て</span>
+        </div>
+        <div class="service-body">
+          <h3>家具組み立て</h3>
+          <p class="service-desc">海外メーカーから国内メーカーまで、3,000件以上の組立経験。養生・設置場所のご相談まで一貫対応。</p>
+          <div class="service-meta">
+            <span class="service-price">¥8,800〜 / 個</span>
+            <span class="service-rating">★ 4.92（15件）</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="service-card">
+        <div class="service-img" role="img" aria-label="洗濯機設置サービスの画像">
+          <span class="placeholder-label">洗濯機設置</span>
+        </div>
+        <div class="service-body">
+          <h3>洗濯機設置</h3>
+          <p class="service-desc">大手業務経験あり。駐車代は当店負担、損害保険加入済。急に必要な部品もご用意しております。</p>
+          <div class="service-meta">
+            <span class="service-price">¥6,600〜</span>
+            <span class="service-rating">★ 4.88（14件）</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="service-card">
+        <div class="service-img" role="img" aria-label="家具の移動・模様替えサービスの画像">
+          <span class="placeholder-label">家具移動・模様替え</span>
+        </div>
+        <div class="service-body">
+          <h3>家具の移動・模様替え</h3>
+          <p class="service-desc">業界歴10年の引越専門店だから、重量家具の移動も安心。お部屋全体の模様替えもお任せください。</p>
+          <div class="service-meta">
+            <span class="service-price">¥8,800〜</span>
+            <span class="service-rating">★ 4.81（42件）</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="service-card">
+        <div class="service-img" role="img" aria-label="オフィス移転サービスの画像">
+          <span class="placeholder-label">オフィス移転</span>
+        </div>
+        <div class="service-body">
+          <h3>オフィス移転・引越し</h3>
+          <p class="service-desc">引越専業だから、早い・安心。社員様の残業を増やさず、業務に支障のないスムーズな移転を実現します。</p>
+          <div class="service-meta">
+            <span class="service-price">¥55,000〜</span>
+            <span class="service-rating">★ 4.89（2件）</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============== PRICING ============== -->
+<section class="pricing" id="pricing">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-eyebrow">PRICING</span>
+      <h2 class="section-title">料金のめやす</h2>
+      <p class="section-lead">荷物量・距離・日程によって変動します。<br />正確な金額は無料お見積りにてご案内いたします。</p>
+    </div>
+
+    <div class="pricing-tabs" role="tablist">
+      <button class="pricing-tab is-active" data-tab="moving" role="tab">引越し</button>
+      <button class="pricing-tab" data-tab="assembly" role="tab">家具組立</button>
+      <button class="pricing-tab" data-tab="other" role="tab">その他</button>
+    </div>
+
+    <div class="pricing-panel is-active" data-panel="moving">
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <div class="pricing-card-head">
+            <h3>2t アルミバン</h3>
+            <span class="pricing-card-sub">1ルーム〜1LDK・ご単身様向け</span>
+          </div>
+          <div class="pricing-card-price">
+            <span class="price-range">¥50,000 <span class="tilde">〜</span> ¥70,000</span>
+            <span class="price-note">3月下旬・繁忙期目安</span>
+          </div>
+          <ul class="pricing-card-features">
+            <li>荷室サイズ：1.8m × 1.8m × 3m（約3〜4畳）</li>
+            <li>運び出し・積み込み・積み下ろし</li>
+            <li>養生作業込み</li>
+          </ul>
+        </div>
+        <div class="pricing-card pricing-card-recommend">
+          <span class="recommend-flag">人気</span>
+          <div class="pricing-card-head">
+            <h3>3t アルミバン</h3>
+            <span class="pricing-card-sub">1LDK〜2LDK・ご家族様向け</span>
+          </div>
+          <div class="pricing-card-price">
+            <span class="price-range">¥90,000 <span class="tilde">〜</span> ¥120,000</span>
+            <span class="price-note">3月下旬・繁忙期目安</span>
+          </div>
+          <ul class="pricing-card-features">
+            <li>荷室サイズ：2.1m × 2.2m × 4.5m（約5〜6畳）</li>
+            <li>運び出し・積み込み・積み下ろし</li>
+            <li>養生作業込み</li>
+          </ul>
+        </div>
+        <div class="pricing-card">
+          <div class="pricing-card-head">
+            <h3>4t アルミバン</h3>
+            <span class="pricing-card-sub">2LDK以上・大型家財対応</span>
+          </div>
+          <div class="pricing-card-price">
+            <span class="price-range">お見積り</span>
+            <span class="price-note">荷物量に応じてご案内</span>
+          </div>
+          <ul class="pricing-card-features">
+            <li>荷室サイズ：2.1m × 2.3m × 5.8m（約7〜8畳）</li>
+            <li>大規模移設・特殊作業も対応</li>
+            <li>クレーン車手配可</li>
+          </ul>
+        </div>
+      </div>
+      <div class="pricing-options">
+        <h4>追加オプション（税込）</h4>
+        <ul class="options-list">
+          <li><span>ダンボール 小</span><span>¥220 / 枚</span></li>
+          <li><span>ダンボール 大</span><span>¥330 / 枚</span></li>
+          <li><span>家具吊り作業（クレーン車・3階まで）</span><span>¥22,000</span></li>
+          <li><span>往復作業</span><span>引越代金の50%</span></li>
+          <li><span>10km以上の高速移動費</span><span>実費</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="pricing-panel" data-panel="assembly">
+      <div class="pricing-table-wrap">
+        <table class="pricing-table">
+          <thead>
+            <tr><th>家具サイズ（3辺の合計）</th><th>料金（税込・1個あたり）</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>〜200cm</td><td>¥8,800</td></tr>
+            <tr><td>201〜300cm</td><td>¥11,000</td></tr>
+            <tr><td>301〜400cm</td><td>¥14,300</td></tr>
+            <tr><td>401〜500cm</td><td>¥16,500</td></tr>
+            <tr><td>501cm〜</td><td>¥22,000</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="pricing-note">複数台割引適用。事前に組み立てるものの詳細をお知らせください。</p>
+    </div>
+
+    <div class="pricing-panel" data-panel="other">
+      <div class="pricing-grid pricing-grid-3">
+        <div class="pricing-card">
+          <div class="pricing-card-head"><h3>洗濯機設置</h3></div>
+          <div class="pricing-card-price"><span class="price-range">¥6,600〜</span></div>
+          <ul class="pricing-card-features">
+            <li>取外し・取付対応</li>
+            <li>損害保険加入済</li>
+            <li>駐車代当店負担</li>
+          </ul>
+        </div>
+        <div class="pricing-card">
+          <div class="pricing-card-head"><h3>家具移動・模様替え</h3></div>
+          <div class="pricing-card-price"><span class="price-range">¥8,800〜</span></div>
+          <ul class="pricing-card-features">
+            <li>1点からご相談可</li>
+            <li>養生作業込み</li>
+            <li>レイアウトのご相談OK</li>
+          </ul>
+        </div>
+        <div class="pricing-card">
+          <div class="pricing-card-head"><h3>オフィス移転</h3></div>
+          <div class="pricing-card-price"><span class="price-range">¥55,000〜</span></div>
+          <ul class="pricing-card-features">
+            <li>引越専業のスピード対応</li>
+            <li>営業時間外対応も相談可</li>
+            <li>インボイス対応領収書</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== SIMULATOR ============== -->
+<section class="sim" id="sim">
+  <div class="container">
+    <div class="sim-card">
+      <div class="sim-head">
+        <span class="section-eyebrow">QUICK ESTIMATE</span>
+        <h2 class="section-title">かんたん料金シミュレーター</h2>
+        <p class="section-lead">3つの質問で、おおよその金額をその場でご確認いただけます。</p>
+      </div>
+      <div class="sim-body">
+        <div class="sim-controls">
+          <div class="sim-field">
+            <label>世帯タイプ</label>
+            <div class="sim-options" data-group="household">
+              <button class="sim-opt is-active" data-value="single">単身</button>
+              <button class="sim-opt" data-value="couple">2人暮らし</button>
+              <button class="sim-opt" data-value="family">ファミリー</button>
+            </div>
+          </div>
+          <div class="sim-field">
+            <label>距離</label>
+            <div class="sim-options" data-group="distance">
+              <button class="sim-opt is-active" data-value="short">市内（〜10km）</button>
+              <button class="sim-opt" data-value="mid">県内（〜50km）</button>
+              <button class="sim-opt" data-value="long">県外</button>
+            </div>
+          </div>
+          <div class="sim-field">
+            <label>時期</label>
+            <div class="sim-options" data-group="season">
+              <button class="sim-opt is-active" data-value="normal">通常期</button>
+              <button class="sim-opt" data-value="busy">繁忙期（2月末〜5月）</button>
+            </div>
+          </div>
+        </div>
+        <div class="sim-result">
+          <div class="sim-result-label">概算お見積り</div>
+          <div class="sim-result-price">
+            <span id="simMin">50,000</span>
+            <span class="tilde">〜</span>
+            <span id="simMax">70,000</span>
+            <span class="yen">円</span>
+          </div>
+          <div class="sim-result-meta">
+            <span id="simTruck">2tアルミバン</span>
+            ・ <span id="simSeasonLabel">通常期料金</span>
+          </div>
+          <a href="#contact" class="btn btn-primary btn-block">この内容で見積依頼</a>
+          <p class="sim-disclaimer">※あくまで目安です。最終金額は荷物量・搬入経路により変動します。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== AREA ============== -->
+<section class="area" id="area">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-eyebrow">SERVICE AREA</span>
+      <h2 class="section-title">対応エリア</h2>
+      <p class="section-lead">出張費無料エリア。エリア外でも長距離対応可能ですので、お気軽にご相談ください。</p>
+    </div>
+    <div class="area-search">
+      <input type="search" id="areaSearch" placeholder="市区町村名で検索（例：名古屋市北区）" aria-label="エリア検索" />
+      <span class="area-count" id="areaCount"></span>
+    </div>
+    <div class="area-grid" id="areaGrid">
+      <div class="area-block" data-pref="愛知県">
+        <h3>愛知県</h3>
+        <div class="area-list">
+          <span>名古屋市全16区</span><span>一宮市</span><span>瀬戸市</span><span>春日井市</span><span>豊田市</span><span>岡崎市</span><span>豊橋市</span><span>豊川市</span><span>刈谷市</span><span>安城市</span><span>小牧市</span><span>稲沢市</span><span>東海市</span><span>大府市</span><span>知多市</span><span>半田市</span><span>常滑市</span><span>蒲郡市</span><span>西尾市</span><span>碧南市</span><span>高浜市</span><span>知立市</span><span>豊明市</span><span>日進市</span><span>長久手市</span><span>尾張旭市</span><span>北名古屋市</span><span>清須市</span><span>あま市</span><span>愛西市</span><span>津島市</span><span>弥富市</span><span>江南市</span><span>岩倉市</span><span>犬山市</span><span>新城市</span><span>田原市</span><span>みよし市</span><span>愛知郡東郷町</span><span>海部郡大治町</span><span>海部郡蟹江町</span><span>海部郡飛島村</span><span>知多郡阿久比町</span><span>知多郡武豊町</span><span>知多郡東浦町</span><span>知多郡南知多町</span><span>知多郡美浜町</span><span>西春日井郡豊山町</span><span>丹羽郡大口町</span><span>丹羽郡扶桑町</span><span>額田郡幸田町</span><span>北設楽郡設楽町</span><span>北設楽郡東栄町</span><span>北設楽郡豊根村</span>
+        </div>
+      </div>
+      <div class="area-block" data-pref="岐阜県">
+        <h3>岐阜県</h3>
+        <div class="area-list">
+          <span>岐阜市</span><span>大垣市</span><span>各務原市</span><span>多治見市</span><span>関市</span><span>美濃加茂市</span><span>可児市</span><span>瑞穂市</span><span>本巣市</span><span>羽島市</span><span>海津市</span><span>恵那市</span><span>土岐市</span><span>瑞浪市</span><span>美濃市</span><span>飛騨市</span><span>山県市</span><span>郡上市</span><span>羽島郡岐南町</span><span>羽島郡笠松町</span><span>養老郡養老町</span><span>安八郡神戸町</span><span>安八郡輪之内町</span><span>安八郡安八町</span><span>本巣郡北方町</span><span>加茂郡坂祝町</span><span>加茂郡富加町</span><span>加茂郡川辺町</span><span>加茂郡七宗町</span><span>加茂郡八百津町</span><span>加茂郡白川町</span><span>加茂郡東白川村</span><span>可児郡御嵩町</span>
+        </div>
+      </div>
+      <div class="area-block" data-pref="三重県">
+        <h3>三重県</h3>
+        <div class="area-list">
+          <span>四日市市</span><span>桑名市</span><span>鈴鹿市</span><span>いなべ市</span><span>亀山市</span><span>員弁郡東員町</span><span>三重郡菰野町</span><span>三重郡川越町</span><span>三重郡朝日町</span><span>桑名郡木曽岬町</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== VOICE ============== -->
+<section class="voice" id="voice">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-eyebrow">CUSTOMER VOICE</span>
+      <h2 class="section-title">お客様の声</h2>
+      <p class="section-lead">大手では断られる作業も対応。「お願いして良かった」の声を多くいただいています。</p>
+    </div>
+    <div class="voice-grid">
+      <article class="voice-card">
+        <div class="voice-rating">★★★★★</div>
+        <h3 class="voice-title">大手の半額以下で、遜色のない仕上がり</h3>
+        <p class="voice-body">繁忙期に何社か相見積を取りましたが、最高値の半額以下でした。荷物が想定より多くなりましたが、笑顔で引き受けてくださり、積み下ろしもスピーディ。終わった後にWi-Fi接続まで手伝っていただき、本当に助かりました。</p>
+        <div class="voice-meta">格安引越し / 匿名希望</div>
+      </article>
+      <article class="voice-card">
+        <div class="voice-rating">★★★★★</div>
+        <h3 class="voice-title">大手で断られた作業を、軽々と</h3>
+        <p class="voice-body">メゾネット2階（内階段）からドラム式洗濯機・冷蔵庫・食器棚の運搬。大手は断られることが多いそうですが、軽々と運んで設置までしてくださいました。家の不調にも気づいてアドバイスをいただき、色々な面で助かりました。</p>
+        <div class="voice-meta">格安引越し / 匿名希望</div>
+      </article>
+      <article class="voice-card">
+        <div class="voice-rating">★★★★★</div>
+        <h3 class="voice-title">写真見積りで安心。当日も丁寧</h3>
+        <p class="voice-body">これまで大手にお願いしていましたが、初めて個人の業者様に依頼。写真のみで的確な見積を出していただき安心感がありました。当日3名で対応、家具配置のアドバイスまで。最初の不安が嘘のような満足度でした。</p>
+        <div class="voice-meta">格安引越し / 匿名希望</div>
+      </article>
+      <article class="voice-card">
+        <div class="voice-rating">★★★★★</div>
+        <h3 class="voice-title">手際良く、丁寧。リピートしました</h3>
+        <p class="voice-body">前回の対応が良かったのでリピート。繁忙期で前回より少し高くなりましたが、大手と比べれば断然安く、テキパキとした作業に引越し先でのお手伝い・アドバイスまで。とてもオススメの業者さんです。</p>
+        <div class="voice-meta">格安引越し / 匿名希望</div>
+      </article>
+    </div>
+    <p class="voice-source">※ お客様の声は、くらしのマーケットに投稿いただいた口コミより一部抜粋・編集して掲載しています。</p>
+  </div>
+</section>
+
+<!-- ============== FLOW ============== -->
+<section class="flow" id="flow">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-eyebrow">FLOW</span>
+      <h2 class="section-title">ご利用の流れ</h2>
+    </div>
+    <ol class="flow-list">
+      <li class="flow-item">
+        <div class="flow-num">1</div>
+        <h3>お問い合わせ</h3>
+        <p>フォーム・お電話でお気軽にご連絡ください。現住所・新住所（番地省略可）、希望日時、人数等をお知らせください。</p>
+      </li>
+      <li class="flow-item">
+        <div class="flow-num">2</div>
+        <h3>お見積り</h3>
+        <p>写真ベースのお見積りも可能。内容を確認のうえ、追加料金が発生する場合は事前にお知らせします。</p>
+      </li>
+      <li class="flow-item">
+        <div class="flow-num">3</div>
+        <h3>ご予約確定</h3>
+        <p>日程が確定したらスケジュール確保。最低3日以上の余裕をもってご予約ください。</p>
+      </li>
+      <li class="flow-item">
+        <div class="flow-num">4</div>
+        <h3>当日作業</h3>
+        <p>1日3便制（午前・午後・夕方）で訪問。テキパキ・丁寧に作業します。</p>
+      </li>
+      <li class="flow-item">
+        <div class="flow-num">5</div>
+        <h3>お支払い</h3>
+        <p>現金、またはオンラインカード決済（タッチ機能付きクレジットカード当日対応可）。インボイス対応の領収書を発行します。</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============== FAQ ============== -->
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-eyebrow">FAQ</span>
+      <h2 class="section-title">よくあるご質問</h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary><span class="faq-q">Q</span>当日に追加料金がかかることはありますか？<span class="faq-toggle" aria-hidden="true"></span></summary>
+        <div class="faq-a"><span class="faq-a-mark">A</span><p>お客様のご希望がない限り、当日の追加料金は一切発生いたしません。事前にお見積りで合意した金額のままご対応いたしますので、ご安心ください。</p></div>
+      </details>
+      <details class="faq-item">
+        <summary><span class="faq-q">Q</span>駐車場がない場合はどうなりますか？<span class="faq-toggle" aria-hidden="true"></span></summary>
+        <div class="faq-a"><span class="faq-a-mark">A</span><p>付近の有料パーキングを使用しますが、その場合のパーキング代は当店が負担いたします（家具組立・洗濯機設置等のサービス）。引越しの場合は事前にご相談ください。</p></div>
+      </details>
+      <details class="faq-item">
+        <summary><span class="faq-q">Q</span>支払い方法は何が使えますか？<span class="faq-toggle" aria-hidden="true"></span></summary>
+        <div class="faq-a"><span class="faq-a-mark">A</span><p>現金、またはオンラインカード決済をご利用いただけます。タッチ機能付きクレジットカードであれば当日のお支払いも可能です。インボイス登録済（T8810759153478）ですので、領収書・請求書も対応しております。</p></div>
+      </details>
+      <details class="faq-item">
+        <summary><span class="faq-q">Q</span>どのくらい前に予約すればよいですか？<span class="faq-toggle" aria-hidden="true"></span></summary>
+        <div class="faq-a"><span class="faq-a-mark">A</span><p>最低3日以上の余裕をもってご予約をお願いいたします。3日以内の急なご相談も可能な限り対応いたしますので、まずはお気軽にお問い合わせください。</p></div>
+      </details>
+      <details class="faq-item">
+        <summary><span class="faq-q">Q</span>繁忙期はいつですか？<span class="faq-toggle" aria-hidden="true"></span></summary>
+        <div class="faq-a"><span class="faq-a-mark">A</span><p>2月末・3月中頃〜4月初旬・4月末〜5月連休までが繁忙期となります。物価上昇・人手不足の影響により、繁忙期のみ料金を割増させていただいております。</p></div>
+      </details>
+      <details class="faq-item">
+        <summary><span class="faq-q">Q</span>不用品の回収もお願いできますか？<span class="faq-toggle" aria-hidden="true"></span></summary>
+        <div class="faq-a"><span class="faq-a-mark">A</span><p>はい、引越しと同時の不用品回収に柔軟に対応しております。事前に種類・量をお知らせください。</p></div>
+      </details>
+      <details class="faq-item">
+        <summary><span class="faq-q">Q</span>ダンボールはもらえますか？<span class="faq-toggle" aria-hidden="true"></span></summary>
+        <div class="faq-a"><span class="faq-a-mark">A</span><p>ダンボールはお客様にてご用意をお願いしております。当店でも有料（小サイズ¥220 / 大サイズ¥330）でご提供可能です。ハンガーケース・ベッドマットカバーは無料で貸出しております。</p></div>
+      </details>
+      <details class="faq-item">
+        <summary><span class="faq-q">Q</span>キャンセル料はかかりますか？<span class="faq-toggle" aria-hidden="true"></span></summary>
+        <div class="faq-a"><span class="faq-a-mark">A</span><p>引越しの場合、3日前までキャンセル料0%、前々日20%、前日30%、当日50%となります。サービスにより条件が異なりますので、詳細はお問い合わせください。</p></div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============== COMPANY ============== -->
+<section class="company" id="company">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-eyebrow">COMPANY</span>
+      <h2 class="section-title">会社概要</h2>
+    </div>
+    <div class="company-wrap">
+      <div class="company-profile">
+        <div class="profile-img" role="img" aria-label="代表者写真">
+          <span class="placeholder-label">代表写真</span>
+        </div>
+        <div class="profile-text">
+          <span class="profile-role">代表 / 店長</span>
+          <h3>上田 雅俊</h3>
+          <p>大手引越センターに7年勤務。ドライバー職、班長職、講師を経験し、VIP引越、マンション新規引越、TV出演、大規模移設引越などを担当。2022年に独立、スマイルサービスを開業。「引越」という大きなイベントを良い思い出にしていただくため、安心・安全・気配りを大切にしたサービスを提供しています。</p>
+        </div>
+      </div>
+      <dl class="company-table">
+        <div class="company-row"><dt>屋号</dt><dd>スマイルサービス</dd></div>
+        <div class="company-row"><dt>代表</dt><dd>上田 雅俊</dd></div>
+        <div class="company-row"><dt>所在地</dt><dd>愛知県 名古屋市北区</dd></div>
+        <div class="company-row"><dt>営業時間</dt><dd>8:00 〜 20:00</dd></div>
+        <div class="company-row"><dt>定休日</dt><dd>年中無休</dd></div>
+        <div class="company-row"><dt>事業内容</dt><dd>格安引越し / 家具組立 / 洗濯機設置 / 模様替え / オフィス移転</dd></div>
+        <div class="company-row"><dt>許認可</dt><dd>軽貨物 名古屋481れ3118</dd></div>
+        <div class="company-row"><dt>インボイス登録番号</dt><dd>T8810759153478</dd></div>
+        <div class="company-row"><dt>受賞歴</dt><dd>くらしのマーケットアワード2023 急成長賞</dd></div>
+        <div class="company-row"><dt>支払方法</dt><dd>現金 / オンラインカード決済（タッチ決済対応）</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<!-- ============== CONTACT ============== -->
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="contact-card">
+      <div class="contact-head">
+        <span class="section-eyebrow contact-eyebrow">CONTACT</span>
+        <h2 class="section-title contact-title">無料お見積り・ご相談</h2>
+        <p class="section-lead contact-lead">フォーム・お電話、ご都合の良い方法でお気軽にお問い合わせください。<br />お見積りは無料、しつこい営業は一切いたしません。</p>
+      </div>
+
+      <div class="contact-body">
+        <div class="contact-tel-block">
+          <span class="contact-tel-label">お電話でのお問い合わせ</span>
+          <a href="tel:0000000000" class="contact-tel-num">090-0000-0000</a>
+          <span class="contact-tel-hours">受付時間 8:00〜20:00 / 年中無休</span>
+        </div>
+
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-row">
+            <label>
+              <span class="form-label">お名前 <em>必須</em></span>
+              <input type="text" name="name" required placeholder="山田 太郎" />
+            </label>
+            <label>
+              <span class="form-label">電話番号 <em>必須</em></span>
+              <input type="tel" name="tel" required placeholder="090-0000-0000" />
+            </label>
+          </div>
+          <div class="form-row">
+            <label class="full">
+              <span class="form-label">メールアドレス</span>
+              <input type="email" name="email" placeholder="example@example.com" />
+            </label>
+          </div>
+          <div class="form-row">
+            <label class="full">
+              <span class="form-label">ご相談内容 <em>必須</em></span>
+              <div class="select-wrap">
+                <select name="category" required>
+                  <option value="">選択してください</option>
+                  <option value="moving">格安引越し</option>
+                  <option value="assembly">家具組立</option>
+                  <option value="washing">洗濯機設置</option>
+                  <option value="rearranging">家具移動・模様替え</option>
+                  <option value="office">オフィス移転</option>
+                  <option value="other">その他</option>
+                </select>
+              </div>
+            </label>
+          </div>
+          <div class="form-row">
+            <label>
+              <span class="form-label">現住所（市区町村）</span>
+              <input type="text" name="from" placeholder="名古屋市北区" />
+            </label>
+            <label>
+              <span class="form-label">新住所（市区町村）</span>
+              <input type="text" name="to" placeholder="名古屋市東区" />
+            </label>
+          </div>
+          <div class="form-row">
+            <label class="full">
+              <span class="form-label">希望日時・荷物量・その他ご要望</span>
+              <textarea name="message" rows="5" placeholder="例：4/15 午前 / 1LDK / 大型家具は冷蔵庫・洗濯機・ベッド・ソファ"></textarea>
+            </label>
+          </div>
+          <label class="form-check">
+            <input type="checkbox" name="agree" required />
+            <span><a href="#privacy">プライバシーポリシー</a>に同意する</span>
+          </label>
+          <button type="submit" class="btn btn-primary btn-lg btn-block">この内容で送信する</button>
+          <div class="form-success" id="formSuccess" hidden>
+            <strong>送信が完了しました。</strong><br />
+            通常24時間以内にご連絡いたします。お急ぎの場合はお電話でご連絡ください。
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== FOOTER ============== -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" width="32" height="32">
+            <circle cx="20" cy="20" r="18" fill="#FF7A00"/>
+            <circle cx="14" cy="17" r="2.2" fill="#0E2A47"/>
+            <circle cx="26" cy="17" r="2.2" fill="#0E2A47"/>
+            <path d="M11 23 Q20 31 29 23" stroke="#0E2A47" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="brand-text">
+          <span class="brand-name">スマイルサービス</span>
+          <span class="brand-sub">SMILE SERVICE</span>
+        </span>
+      </div>
+      <p class="footer-tagline">安心・安全・気配りを大切にした<br />引越しと暮らしのサービス</p>
+    </div>
+    <div class="footer-cols">
+      <div>
+        <h4>サービス</h4>
+        <ul>
+          <li><a href="#services">格安引越し</a></li>
+          <li><a href="#services">家具組立</a></li>
+          <li><a href="#services">洗濯機設置</a></li>
+          <li><a href="#services">家具移動・模様替え</a></li>
+          <li><a href="#services">オフィス移転</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>会社情報</h4>
+        <ul>
+          <li><a href="#company">会社概要</a></li>
+          <li><a href="#area">対応エリア</a></li>
+          <li><a href="#voice">お客様の声</a></li>
+          <li><a href="#faq">よくある質問</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>お問い合わせ</h4>
+        <ul>
+          <li><a href="tel:0000000000">090-0000-0000</a></li>
+          <li><a href="#contact">お問い合わせフォーム</a></li>
+          <li>受付 8:00〜20:00</li>
+          <li>年中無休</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container footer-bottom-inner">
+      <small>© 2026 スマイルサービス All rights reserved.</small>
+      <small>軽貨物 名古屋481れ3118 / インボイス登録番号 T8810759153478</small>
+    </div>
+  </div>
+</footer>
+
+<a href="#contact" class="floating-cta" aria-label="無料お見積りへ">
+  <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M21 15a4 4 0 0 1-4 4H8l-5 4V6a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  <span>無料お見積り</span>
+</a>
+
+<script>
+// ============== Mobile menu ==============
+const hamburger = document.getElementById('hamburger');
+const mobileNav = document.getElementById('mobileNav');
+hamburger.addEventListener('click', () => {
+  const open = mobileNav.classList.toggle('is-open');
+  mobileNav.hidden = !open;
+  hamburger.setAttribute('aria-expanded', String(open));
+});
+mobileNav.querySelectorAll('a').forEach(a => {
+  a.addEventListener('click', () => {
+    mobileNav.classList.remove('is-open');
+    mobileNav.hidden = true;
+    hamburger.setAttribute('aria-expanded', 'false');
+  });
+});
+
+// ============== Pricing tabs ==============
+document.querySelectorAll('.pricing-tab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    const target = tab.dataset.tab;
+    document.querySelectorAll('.pricing-tab').forEach(t => t.classList.toggle('is-active', t === tab));
+    document.querySelectorAll('.pricing-panel').forEach(p => p.classList.toggle('is-active', p.dataset.panel === target));
+  });
+});
+
+// ============== Simulator ==============
+const simState = { household: 'single', distance: 'short', season: 'normal' };
+
+const PRICE_TABLE = {
+  single: { base: [50000, 70000], truck: '2tアルミバン' },
+  couple: { base: [70000, 95000], truck: '2t〜3tアルミバン' },
+  family: { base: [90000, 120000], truck: '3tアルミバン' },
+};
+const DISTANCE_MULT = { short: 1.0, mid: 1.15, long: 1.4 };
+const SEASON_MULT = { normal: 1.0, busy: 1.3 };
+
+function fmt(n) { return Math.round(n / 1000) * 1000 |0; }
+function fmtNum(n) { return n.toLocaleString('ja-JP'); }
+
+function updateSim() {
+  const t = PRICE_TABLE[simState.household];
+  const dm = DISTANCE_MULT[simState.distance];
+  const sm = SEASON_MULT[simState.season];
+  const min = fmt(t.base[0] * dm * sm);
+  const max = fmt(t.base[1] * dm * sm);
+  document.getElementById('simMin').textContent = fmtNum(min);
+  document.getElementById('simMax').textContent = fmtNum(max);
+  document.getElementById('simTruck').textContent = t.truck;
+  document.getElementById('simSeasonLabel').textContent = simState.season === 'busy' ? '繁忙期料金（割増適用）' : '通常期料金';
+}
+
+document.querySelectorAll('.sim-options').forEach(group => {
+  const key = group.dataset.group;
+  group.querySelectorAll('.sim-opt').forEach(opt => {
+    opt.addEventListener('click', () => {
+      group.querySelectorAll('.sim-opt').forEach(o => o.classList.toggle('is-active', o === opt));
+      simState[key] = opt.dataset.value;
+      updateSim();
+    });
+  });
+});
+
+// ============== Area search ==============
+const areaSearch = document.getElementById('areaSearch');
+const areaCount = document.getElementById('areaCount');
+const allAreaSpans = document.querySelectorAll('.area-list span');
+function applyAreaFilter() {
+  const q = (areaSearch.value || '').trim();
+  let visible = 0;
+  allAreaSpans.forEach(s => {
+    s.classList.remove('is-hit');
+    s.classList.remove('is-hidden');
+    if (!q) { visible++; return; }
+    if (s.textContent.includes(q)) { s.classList.add('is-hit'); visible++; }
+    else { s.classList.add('is-hidden'); }
+  });
+  areaCount.textContent = q ? `${visible}件ヒット` : '';
+}
+areaSearch.addEventListener('input', applyAreaFilter);
+
+// ============== Contact form ==============
+const form = document.getElementById('contactForm');
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const success = document.getElementById('formSuccess');
+  // basic validation
+  let valid = true;
+  form.querySelectorAll('input, select, textarea').forEach(el => {
+    if (el.required && !el.value.trim()) {
+      valid = false;
+      el.style.borderColor = '#E63946';
+    } else {
+      el.style.borderColor = '';
+    }
+  });
+  const agree = form.querySelector('input[name=agree]');
+  if (!agree.checked) valid = false;
+  if (!valid) { success.hidden = true; return; }
+  // demo: just show success
+  form.style.display = 'none';
+  success.hidden = false;
+  success.scrollIntoView({ behavior: 'smooth', block: 'center' });
+});
+
+</script>
+</body>
+</html>
