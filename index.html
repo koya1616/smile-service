@@ -1159,110 +1159,62 @@ section { padding: 100px 0; }
 .contact-title { color: var(--c-navy); }
 .contact-body {
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 48px;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 24px;
 }
-.contact-tel-block {
-  background: linear-gradient(135deg, var(--c-navy) 0%, var(--c-navy-deep) 100%);
+.contact-channel {
+  border: 1px solid var(--c-line);
   border-radius: var(--r-lg);
-  padding: 32px 28px;
-  color: #fff;
-  text-align: center;
+  padding: 28px;
+  color: var(--c-text);
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  gap: 8px;
-  align-self: start;
+  gap: 18px;
+  min-height: 260px;
 }
-.contact-tel-label { font-size: 12px; letter-spacing: .1em; color: rgba(255,255,255,.7); }
-.contact-tel-num {
-  font-family: 'Inter', sans-serif;
-  font-size: 32px;
-  font-weight: 800;
-  color: #fff;
-  letter-spacing: .03em;
-  display: block;
+.contact-channel-line {
+  background: #F0FFF5;
+  border-color: rgba(6,199,85,.28);
 }
-.contact-tel-hours { font-size: 12px; color: rgba(255,255,255,.7); }
-
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
+.contact-channel-insta {
+  background: #FFF4F7;
+  border-color: rgba(228,64,95,.25);
 }
-.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
-.form-row .full { grid-column: span 2; }
-.form-label {
-  display: block;
-  font-size: 13px;
-  font-weight: 700;
-  color: var(--c-navy);
-  margin-bottom: 6px;
-}
-.form-label em {
-  display: inline-block;
-  font-style: normal;
-  font-size: 10px;
-  background: var(--c-orange);
-  color: #fff;
-  padding: 1px 6px;
-  border-radius: 4px;
-  margin-left: 6px;
-  font-weight: 700;
-  letter-spacing: .05em;
-}
-.contact-form input,
-.contact-form select,
-.contact-form textarea {
-  width: 100%;
-  padding: 12px 14px;
-  border: 1.5px solid var(--c-line);
-  border-radius: var(--r-sm);
-  font-family: inherit;
-  font-size: 14px;
+.contact-channel-icon {
+  width: 48px; height: 48px;
+  border-radius: 50%;
   background: #fff;
-  transition: border-color .2s ease, box-shadow .2s ease;
-}
-.contact-form input:focus,
-.contact-form select:focus,
-.contact-form textarea:focus {
-  outline: none;
-  border-color: var(--c-orange);
-  box-shadow: 0 0 0 3px rgba(255,122,0,.12);
-}
-.select-wrap { position: relative; }
-.select-wrap::after {
-  content: "▾";
-  position: absolute;
-  right: 14px; top: 50%;
-  transform: translateY(-50%);
-  pointer-events: none;
-  color: var(--c-text-mute);
-}
-.contact-form select { appearance: none; padding-right: 36px; }
-.form-check {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  gap: 8px;
-  font-size: 13px;
-  color: var(--c-text-mute);
+  justify-content: center;
+  box-shadow: var(--shadow-sm);
 }
-.form-check a { color: var(--c-orange); text-decoration: underline; }
-.form-success {
-  background: #E8F5EE;
-  border: 1px solid #BBE5CC;
-  color: var(--c-success);
-  padding: 16px 20px;
-  border-radius: var(--r-md);
+.contact-channel h3 {
+  margin: 0;
+  font-size: 22px;
+  color: var(--c-navy);
+}
+.contact-channel p {
+  margin: 0;
+  color: var(--c-text-mute);
   font-size: 14px;
-  margin-top: 12px;
+}
+.contact-channel .btn { margin-top: auto; justify-content: center; }
+.btn-line { background: #06C755; color: #fff; }
+.btn-line:hover { background: #05B34D; box-shadow: 0 12px 26px rgba(6,199,85,.28); }
+.btn-insta { background: #E4405F; color: #fff; }
+.btn-insta:hover { background: #D23353; box-shadow: 0 12px 26px rgba(228,64,95,.25); }
+.contact-note {
+  margin: 28px 0 0;
+  text-align: center;
+  color: var(--c-text-mute);
+  font-size: 13px;
 }
 
 @media (max-width: 880px) {
   .contact-card { padding: 32px 24px; }
   .contact-body { grid-template-columns: 1fr; gap: 24px; }
-  .form-row { grid-template-columns: 1fr; }
-  .form-row .full { grid-column: span 1; }
+  .contact-channel { min-height: 0; }
 }
 
 /* ============== Footer ============== */
@@ -1848,7 +1800,7 @@ section { padding: 100px 0; }
       <li class="flow-item">
         <div class="flow-num">1</div>
         <h3>お問い合わせ</h3>
-        <p>フォーム・お電話でお気軽にご連絡ください。現住所・新住所（番地省略可）、希望日時、人数等をお知らせください。</p>
+        <p>LINEまたはInstagramからお気軽にご連絡ください。現住所・新住所（番地省略可）、希望日時をお知らせください。</p>
       </li>
       <li class="flow-item">
         <div class="flow-num">2</div>
@@ -1959,74 +1911,30 @@ section { padding: 100px 0; }
       <div class="contact-head">
         <span class="section-eyebrow contact-eyebrow">CONTACT</span>
         <h2 class="section-title contact-title">無料お見積り・ご相談</h2>
-        <p class="section-lead contact-lead">フォーム・お電話、ご都合の良い方法でお気軽にお問い合わせください。<br />お見積りは無料、しつこい営業は一切いたしません。</p>
+        <p class="section-lead contact-lead">LINEまたはInstagramから、お気軽にお問い合わせください。<br />写真での概算お見積りも対応しています。</p>
       </div>
 
       <div class="contact-body">
-        <div class="contact-tel-block">
-          <span class="contact-tel-hours">営業時間 8:00〜20:00 / 年中無休</span>
+        <div class="contact-channel contact-channel-line">
+          <span class="contact-channel-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="28" height="28"><path d="M311 196.8l0 81.3c0 2.1-1.6 3.7-3.7 3.7l-13 0c-1.3 0-2.4-.7-3-1.5L254 230 254 278.2c0 2.1-1.6 3.7-3.7 3.7l-13 0c-2.1 0-3.7-1.6-3.7-3.7l0-81.3c0-2.1 1.6-3.7 3.7-3.7l12.9 0c1.1 0 2.4 .6 3 1.6l37.3 50.3 0-48.2c0-2.1 1.6-3.7 3.7-3.7l13 0c2.1-.1 3.8 1.6 3.8 3.5l0 .1zm-93.7-3.7l-13 0c-2.1 0-3.7 1.6-3.7 3.7l0 81.3c0 2.1 1.6 3.7 3.7 3.7l13 0c2.1 0 3.7-1.6 3.7-3.7l0-81.3c0-1.9-1.6-3.7-3.7-3.7zm-31.4 68.1l-35.6 0 0-64.4c0-2.1-1.6-3.7-3.7-3.7l-13 0c-2.1 0-3.7 1.6-3.7 3.7l0 81.3c0 1 .3 1.8 1 2.5 .7 .6 1.5 1 2.5 1l52.2 0c2.1 0 3.7-1.6 3.7-3.7l0-13c0-1.9-1.6-3.7-3.5-3.7l.1 0zm193.7-68.1l-52.3 0c-1.9 0-3.7 1.6-3.7 3.7l0 81.3c0 1.9 1.6 3.7 3.7 3.7l52.2 0c2.1 0 3.7-1.6 3.7-3.7l0-13.1c0-2.1-1.6-3.7-3.7-3.7l-35.5 0 0-13.6 35.5 0c2.1 0 3.7-1.6 3.7-3.7l0-13.1c0-2.1-1.6-3.7-3.7-3.7l-35.5 0 0-13.7 35.5 0c2.1 0 3.7-1.6 3.7-3.7l0-13c-.1-1.9-1.7-3.7-3.7-3.7l.1 0zM512 93.4l0 326c-.1 51.2-42.1 92.7-93.4 92.6l-326 0C41.4 511.9-.1 469.8 0 418.6l0-326C.1 41.4 42.2-.1 93.4 0l326 0c51.2 .1 92.7 42.1 92.6 93.4zM441.6 233.5c0-83.4-83.7-151.3-186.4-151.3S68.8 150.1 68.8 233.5c0 74.7 66.3 137.4 155.9 149.3 21.8 4.7 19.3 12.7 14.4 42.1-.8 4.7-3.8 18.4 16.1 10.1s107.3-63.2 146.5-108.2c27-29.7 39.9-59.8 39.9-93.1l0-.2z" fill="#06C755"/></svg>
+          </span>
+          <h3>LINEで相談</h3>
+          <p>写真や住所を送るだけで、概算見積りまでスムーズにご案内します。</p>
+          <a href="https://line.me/R/ti/p/@722yzztc" target="_blank" rel="noopener noreferrer" class="btn btn-line btn-lg">LINEを開く</a>
         </div>
 
-        <form class="contact-form" id="contactForm" novalidate>
-          <div class="form-row">
-            <label>
-              <span class="form-label">お名前 <em>必須</em></span>
-              <input type="text" name="name" required placeholder="山田 太郎" />
-            </label>
-            <label>
-              <span class="form-label">電話番号 <em>必須</em></span>
-              <input type="tel" name="tel" required placeholder="" />
-            </label>
-          </div>
-          <div class="form-row">
-            <label class="full">
-              <span class="form-label">メールアドレス</span>
-              <input type="email" name="email" placeholder="example@example.com" />
-            </label>
-          </div>
-          <div class="form-row">
-            <label class="full">
-              <span class="form-label">ご相談内容 <em>必須</em></span>
-              <div class="select-wrap">
-                <select name="category" required>
-                  <option value="">選択してください</option>
-                  <option value="moving">格安引越し</option>
-                  <option value="assembly">家具組立</option>
-                  <option value="washing">洗濯機設置</option>
-                  <option value="rearranging">家具移動・模様替え</option>
-                  <option value="office">オフィス移転</option>
-                  <option value="other">その他</option>
-                </select>
-              </div>
-            </label>
-          </div>
-          <div class="form-row">
-            <label>
-              <span class="form-label">現住所（市区町村）</span>
-              <input type="text" name="from" placeholder="名古屋市北区" />
-            </label>
-            <label>
-              <span class="form-label">新住所（市区町村）</span>
-              <input type="text" name="to" placeholder="名古屋市東区" />
-            </label>
-          </div>
-          <div class="form-row">
-            <label class="full">
-              <span class="form-label">希望日時・荷物量・その他ご要望</span>
-              <textarea name="message" rows="5" placeholder="例：4/15 午前 / 1LDK / 大型家具は冷蔵庫・洗濯機・ベッド・ソファ"></textarea>
-            </label>
-          </div>
-          <label class="form-check">
-            <input type="checkbox" name="agree" required />
-            <span><a href="#privacy">プライバシーポリシー</a>に同意する</span>
-          </label>
-          <button type="submit" class="btn btn-primary btn-lg btn-block">この内容で送信する</button>
-          <div class="form-success" id="formSuccess" hidden>
-            <strong>送信が完了しました。</strong><br />
-            通常24時間以内にご連絡いたします。お急ぎの場合はお電話でご連絡ください。
-          </div>
-        </form>
+        <div class="contact-channel contact-channel-insta">
+          <span class="contact-channel-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="28" height="28"><path d="M224.3 141a115 115 0 1 0 -.6 230 115 115 0 1 0 .6-230zm-.6 40.4a74.6 74.6 0 1 1 .6 149.2 74.6 74.6 0 1 1 -.6-149.2zm93.4-45.1a26.8 26.8 0 1 1 53.6 0 26.8 26.8 0 1 1 -53.6 0zm129.7 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM399 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" fill="#E4405F"/></svg>
+          </span>
+          <h3>Instagramで相談</h3>
+          <p>DMからご相談いただけます。作業事例もあわせてご確認ください。</p>
+          <a href="https://www.instagram.com/moving.smile" target="_blank" rel="noopener noreferrer" class="btn btn-insta btn-lg">Instagramを開く</a>
+        </div>
       </div>
+
+      <p class="contact-note">営業時間 8:00〜20:00 / 年中無休。お急ぎの場合はLINEでのご連絡がスムーズです。</p>
     </div>
   </div>
 </section>
@@ -2075,7 +1983,7 @@ section { padding: 100px 0; }
         <h4>お問い合わせ</h4>
         <ul>
           
-          <li><a href="#contact">お問い合わせフォーム</a></li>
+          <li><a href="#contact">LINE・Instagramで相談</a></li>
           <li>受付 8:00〜20:00</li>
           <li>年中無休</li>
         </ul>
@@ -2157,6 +2065,7 @@ document.querySelectorAll('.sim-options').forEach(group => {
     });
   });
 });
+updateSim();
 
 // ============== Area search ==============
 const areaSearch = document.getElementById('areaSearch');
@@ -2175,30 +2084,6 @@ function applyAreaFilter() {
   areaCount.textContent = q ? `${visible}件ヒット` : '';
 }
 areaSearch.addEventListener('input', applyAreaFilter);
-
-// ============== Contact form ==============
-const form = document.getElementById('contactForm');
-form.addEventListener('submit', (e) => {
-  e.preventDefault();
-  const success = document.getElementById('formSuccess');
-  // basic validation
-  let valid = true;
-  form.querySelectorAll('input, select, textarea').forEach(el => {
-    if (el.required && !el.value.trim()) {
-      valid = false;
-      el.style.borderColor = '#E63946';
-    } else {
-      el.style.borderColor = '';
-    }
-  });
-  const agree = form.querySelector('input[name=agree]');
-  if (!agree.checked) valid = false;
-  if (!valid) { success.hidden = true; return; }
-  // demo: just show success
-  form.style.display = 'none';
-  success.hidden = false;
-  success.scrollIntoView({ behavior: 'smooth', block: 'center' });
-});
 
 </script>
 </body>

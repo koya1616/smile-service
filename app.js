@@ -59,6 +59,7 @@ document.querySelectorAll('.sim-options').forEach(group => {
     });
   });
 });
+updateSim();
 
 // ============== Area search ==============
 const areaSearch = document.getElementById('areaSearch');
@@ -77,27 +78,3 @@ function applyAreaFilter() {
   areaCount.textContent = q ? `${visible}件ヒット` : '';
 }
 areaSearch.addEventListener('input', applyAreaFilter);
-
-// ============== Contact form ==============
-const form = document.getElementById('contactForm');
-form.addEventListener('submit', (e) => {
-  e.preventDefault();
-  const success = document.getElementById('formSuccess');
-  // basic validation
-  let valid = true;
-  form.querySelectorAll('input, select, textarea').forEach(el => {
-    if (el.required && !el.value.trim()) {
-      valid = false;
-      el.style.borderColor = '#E63946';
-    } else {
-      el.style.borderColor = '';
-    }
-  });
-  const agree = form.querySelector('input[name=agree]');
-  if (!agree.checked) valid = false;
-  if (!valid) { success.hidden = true; return; }
-  // demo: just show success
-  form.style.display = 'none';
-  success.hidden = false;
-  success.scrollIntoView({ behavior: 'smooth', block: 'center' });
-});
