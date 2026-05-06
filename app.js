@@ -27,9 +27,9 @@ document.querySelectorAll('.pricing-tab').forEach(tab => {
 const simState = { household: 'single', distance: 'short', season: 'normal' };
 
 const PRICE_TABLE = {
-  single: { base: [50000, 70000], truck: '2tアルミバン' },
-  couple: { base: [70000, 95000], truck: '2t〜3tアルミバン' },
-  family: { base: [90000, 120000], truck: '3tアルミバン' },
+  single: { base: [30000, 70000], truck: '2tアルミバン' },
+  couple: { base: [50000, 95000], truck: '2t〜3tアルミバン' },
+  family: { base: [70000, 120000], truck: '3tアルミバン' },
 };
 const DISTANCE_MULT = { short: 1.0, mid: 1.15, long: 1.4 };
 const SEASON_MULT = { normal: 1.0, busy: 1.3 };
