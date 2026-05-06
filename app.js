@@ -78,3 +78,4 @@ function applyAreaFilter() {
   areaCount.textContent = q ? `${visible}件ヒット` : '';
 }
 areaSearch.addEventListener('input', applyAreaFilter);
+

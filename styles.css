@@ -255,7 +255,30 @@ button { font-family: inherit; cursor: pointer; }
   display: flex;
   gap: 12px;
   flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.hero-social {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
   margin-bottom: 28px;
+}
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--c-navy);
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: var(--c-bg-soft);
+  border: 1px solid var(--c-line-soft);
+  transition: background .2s ease, border-color .2s ease;
+}
+.social-link:hover {
+  background: #fff;
+  border-color: var(--c-orange);
 }
 .hero-bullets {
   display: flex;
@@ -1189,3 +1212,4 @@ section { padding: 100px 0; }
   z-index: 40;
 }
 @media (max-width: 720px) { .floating-cta { display: inline-flex; } }
+
