@@ -1,0 +1,25 @@
+<svg width="320" height="320" viewBox="0 0 320 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- handle -->
+  <path
+    d="M110 110C110 70 135 45 160 45C185 45 210 70 210 110"
+    stroke="#F9B000"
+    stroke-width="14"
+    stroke-linecap="round"
+  />
+
+  <!-- bag -->
+  <rect x="85" y="105" width="150" height="170" fill="#F9B000" />
+
+  <!-- eyes -->
+  <circle cx="135" cy="165" r="10" fill="white" />
+  <circle cx="185" cy="165" r="10" fill="white" />
+
+  <!-- rounded smile -->
+  <path
+    d="M115 195C115 250 205 250 205 195"
+    stroke="white"
+    stroke-width="14"
+    stroke-linecap="round"
+    fill="none"
+  />
+</svg>
