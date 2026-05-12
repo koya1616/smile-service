@@ -850,6 +850,32 @@ section { padding: 100px 0; }
   .area-grid { grid-template-columns: 1fr; }
 }
 
+.area-local-intro {
+  background: var(--c-bg-soft);
+  border-left: 4px solid var(--c-orange);
+  border-radius: 0 var(--r-lg) var(--r-lg) 0;
+  padding: 28px 32px;
+  margin-bottom: 36px;
+}
+.area-local-title {
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--c-navy);
+  margin: 0 0 16px;
+}
+.area-local-list {
+  margin: 0;
+  padding: 0 0 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.area-local-list li {
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--c-text);
+}
+
 /* ============== Voice ============== */
 .voice { background: var(--c-bg-soft); }
 .voice-grid {
